@@ -4,7 +4,7 @@ const requestIp = require('request-ip');
 const helloRoute = require('./routes/hello');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.use(requestIp.mw());
 
