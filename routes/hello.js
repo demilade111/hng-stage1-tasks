@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
         clientIp = '8.8.8.8'; 
     }
 
-    const geo = await lookup(clientIp);
+    const geo = await lookup("2001:ac8:8b:2000::43a3");
     const name = req.query.visitor_name || 'Guest';
     const location = geo ? geo.city : 'Unknown';
 
