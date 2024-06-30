@@ -7,6 +7,7 @@ const lookup = async (ip) => {
         Authorization: `Bearer ${process.env.IPINFO_TOKEN}`,
       },
     });
+    console.log("Geo lookup response:", response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching geolocation:", error);
