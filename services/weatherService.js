@@ -8,6 +8,7 @@ const getWeatherByIP = async (ip) => {
         query: ip,
       },
     });
+   
     return response.data;
   } catch (error) {
     console.error("Error fetching weather data:", error);
